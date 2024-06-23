@@ -6,21 +6,38 @@ html {
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
   }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('y2021-07-22-01_generated.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .main{
-    background-color: #202020;
-    width: 160px;
-    height:250px;
-    position: relative;
-    border-radius: 5%;
-    box-shadow: 3px 3px 0px 1px #000000;
+    color: #fff;
+  
+    background-color: rgb(255 255 255 / 6%);
+ 
+  backdrop-filter: blur(10px);
+    width: 185px;
+    height:260px;
+   display: flex;
+   flex-direction: column;
+  border: 2px solid #fff;
+  border-radius: 9px;
+    /* box-shadow: 3px 3px 0px 1px #000000; */
+    align-items: center;
+    padding: 10px 0;
+    gap: 15px;
   }
   #display{
-    background-color: #303030;
-    width: 140px;
-    height:33px;
-    position: absolute;
-    left: 6px;
-    top:14px;
+    border: 2px solid #fff;
+    width: 160px;
+    height:40px;
+    background-color: rgb(255 255 255 / 8%);
     text-align: right;
     color: white;
     font-weight: bold;
@@ -28,23 +45,23 @@ html {
     font-size: 18px;
   }
   .keys{
+    display: flex;
+    flex-wrap: wrap;
     color: white;
-    width: 150px;
-    height:160px;
-     position: absolute;
-    top: 70px;
-    left: 18px;
+    width: 170px;
+    justify-content: center;
+    gap: 4px;
+    margin: 0px;
+    height:190px;
+    
   }
   .keys span{
     border: 2px solid white;
-    box-shadow: 3px 3px 4px 2px #000000;
-    
-    
-    background-color:#161616;
-    width: 28px;
-    height:28px;
+   
+    width: 33px;
+    height: 33px;
     display:inline-flex;
-    margin: 4px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     border-radius:50%;
     align-items: center;
     justify-content: center;
@@ -52,7 +69,7 @@ html {
     font-weight: bold;
   }
  .keys span:hover{
-    background-color: #1f1f1f;
+  background-color: rgb(255 255 255 / 8%);
  }
 
  
