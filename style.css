@@ -7,7 +7,7 @@ html {
     cursor: pointer;
   }
   body{
-    pointer-events: none;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,12 +54,12 @@ html {
     gap: 4px;
     margin: 0px;
     height:190px;
-    pointer-events: none;
+    
     
   }
   .keys span{
     border: 2px solid white;
-    pointer-events: none;
+    
     width: 33px;
     height: 33px;
     display:inline-flex;
