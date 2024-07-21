@@ -1,38 +1,45 @@
-let a = document.getElementById("key1")
-let b = document.getElementById("key2")
-let c = document.getElementById("key3")
-let d = document.getElementById("key4")
-let e = document.getElementById("key5")
-let f = document.getElementById("key6")
-let g = document.getElementById("key7")
-let h = document.getElementById("key8")
-let i = document.getElementById("key9")
-let j = document.getElementById("key0")
-let k = document.getElementById("key+")
-let l = document.getElementById("key-")
-let m = document.getElementById("key=")
-let n = document.getElementById("key/")
-let o = document.getElementById("key.")
-let p = document.getElementById("key*")
-let q = document.getElementById("key%")
-let r = document.getElementById("keyac")
-let s = document.getElementById("keyc")
-let t = document.getElementById("keyM")
-let z = document.getElementById("clear")
-let x = document.getElementById("cal")
-let y=document.getElementById("screen")
-let display= document.getElementById("display")
-function calculation(){
-   try{
-     display.value=eval(display.value);
-   }
-  catch(error){
-    display.value= "Error"
-  }
+var a = document.getElementById("key1");
+var b = document.getElementById("key2");
+var c = document.getElementById("key3");
+var d = document.getElementById("key4");
+var e = document.getElementById("key5");
+var f = document.getElementById("key6");
+var g = document.getElementById("key7");
+var h = document.getElementById("key8");
+var i = document.getElementById("key9");
+var j = document.getElementById("key0");
+var k = document.getElementById("key+");
+var l = document.getElementById("key-");
+var m = document.getElementById("key=");
+var n = document.getElementById("key/");
+var o = document.getElementById("key.");
+var p = document.getElementById("key*");
+var q = document.getElementById("key%");
+var r = document.getElementById("keyac");
+var s = document.getElementById("keyc");
+var t = document.getElementById("keyM");
+var z = document.getElementById("clear");
+var x = document.getElementById("cal");
+var y = document.getElementById("screen");
+var display = document.getElementById("display");
+function calculation() {
+    try {
+        display.value = eval(display.value);
+    }
+    catch (error) {
+        display.value = "Error";
+    }
 }
-function appendToDisplay(input){
-  display.value += input
+function appendToDisplay(input) {
+    display.value += input;
 }
-function clearDisplay(){
-  display.value= "";
+function allClear() {
+    display.value = "";
+}
+function recentClear() {
+    display.value = display.value.slice(0, -1);
+}
+function percentage() {
+    var val = display.value;
+    display.value = eval(val + '/' + '100');
 }
